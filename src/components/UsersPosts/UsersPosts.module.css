@@ -1,0 +1,270 @@
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.posts{
+  max-width: 90%;
+}
+
+.post{
+  margin-bottom: 5vh;
+}
+
+.tooltip{
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.userName{
+    position: relative;
+    text-decoration: underline;
+    display: inline-block;
+    margin: 0;
+    font-size: 20px;
+    height: 30px;
+    /* background-color: aqua; */
+}
+
+.userName .tooltip{
+    display: none;
+    position: absolute;
+    top: 1em;
+    left: 0;
+    padding: 3px;
+    white-space: nowrap;
+}
+
+.userName:hover { 
+    cursor: pointer;
+}
+.userName:hover .tooltip { 
+    display: block;
+    border-style: dashed;
+    color: black;
+    background-color: white;
+    border-color: greenyellow; 
+    z-index: 10;
+    margin-top: 10px;
+}
+
+
+.author{
+  font-weight: 500;
+}
+
+.buttons{
+    display: flex;
+    gap: 10px
+}
+
+
+.inputQuery{
+    width: 250px;
+    margin-right: 5px;
+    color: black;
+    border: solid greenyellow 2px;
+    outline: none;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 15px;
+    padding: auto;
+    text-align: center;
+}
+
+.queryForm{
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.reactions{
+    display: flex;
+    gap: 30px;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 15px;
+}
+
+.reactions div span{
+  margin-left: 2px
+}
+
+.like{
+    display: flex;
+    gap: 5px;
+}
+
+.dislike{
+    display: flex;
+    gap: 5px;
+}
+
+
+.postTitle{
+  font-size: 30px;
+  font-weight: 500;
+  margin-top: 20px;
+}
+
+.postBody{
+  font-size: 22px;
+  font-weight: 400;
+}
+
+
+
+
+
+
+
+/* КНОПКА */
+.submitBtn {
+  width: 100px;
+  height: 25px;
+  color: black;
+  border-radius: 2px;
+  padding: 0px 0px;
+  font-family: 'Lato', sans-serif;
+  font-weight: 600;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+   7px 7px 20px 0px rgba(0,0,0,.1),
+   4px 4px 5px 0px rgba(0,0,0,.1);
+  outline: none;
+}
+.submitBtn {
+  background: greenyellow;
+  background: radial-gradient(circle, greenyellow 0%, white 100%);
+  padding: 0;
+  border: none;
+}
+.submitBtn:before,
+.submitBtn:after {
+  position: absolute;
+  content: "";
+  height: 0%;
+  width: 1px;
+}
+.submitBtn:before {
+  right: 0;
+  top: 0;
+  transition: all 500ms ease;
+}
+.submitBtn:after {
+  left: 0;
+  bottom: 0;
+  transition: all 500ms ease;
+}
+.submitBtn:hover{
+  color: gray;
+  box-shadow: none;
+}
+.submitBtn:hover:before {
+  transition: all 500ms ease;
+  height: 100%;
+}
+.submitBtn:hover:after {
+  transition: all 500ms ease;
+  height: 100%;
+}
+
+
+
+
+@media only screen and (max-width: 1000px) and (min-width: 801px){
+  .postTitle{
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: 20px;
+  }
+  
+  .postBody{
+    font-size: 18px;
+    font-weight: 400;
+  }
+}
+
+@media only screen and (max-width: 800px) and (min-width: 440px){
+  .postTitle{
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 20px;
+  }
+  
+  .postBody{
+    font-size: 15px;
+    font-weight: 400;
+  }
+  .inputQuery{
+    width: 200px;
+  }
+}
+
+@media only screen and (max-width: 439px){
+  .postTitle{
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 5px;
+  }
+  
+  .postBody{
+    font-size: 15px;
+    font-weight: 400;
+  }
+  .userName{
+
+  }
+  .inputQuery{
+    width: 140px;
+    height: 20px;
+    font-size: 10px;
+  }
+  .submitBtn{
+    width: 70px;
+    height: 15px;
+    font-size: 10px;
+  }
+  .buttons{
+    gap: 5px
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

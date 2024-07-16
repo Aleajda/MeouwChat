@@ -1,0 +1,69 @@
+.wrapper{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 100px;
+}
+
+
+
+
+
+/* КНОПКА */
+.submitBtn {
+    width: 120px;
+    height: 30px;
+    color: black;
+    border-radius: 2px;
+    padding: 0px 0px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+  }
+  .submitBtn {
+    background: greenyellow;
+    background: radial-gradient(circle, greenyellow 0%, white 100%);
+    padding: 0;
+    border: none;
+  }
+  .submitBtn:before,
+  .submitBtn:after {
+    position: absolute;
+    content: "";
+    height: 0%;
+    width: 1px;
+  }
+  .submitBtn:before {
+    right: 0;
+    top: 0;
+    transition: all 500ms ease;
+  }
+  .submitBtn:after {
+    left: 0;
+    bottom: 0;
+    transition: all 500ms ease;
+  }
+  .submitBtn:hover{
+    color: gray;
+    box-shadow: none;
+  }
+  .submitBtn:hover:before {
+    transition: all 500ms ease;
+    height: 100%;
+  }
+  .submitBtn:hover:after {
+    transition: all 500ms ease;
+    height: 100%;
+  }

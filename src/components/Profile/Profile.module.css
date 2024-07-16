@@ -1,0 +1,17 @@
+.contentImg {
+  width: 100%;
+  height: 80px;
+  margin-bottom: 10px;
+  }
+
+.ava{
+  display: flex;
+}
+
+.avaImg{
+  width: 100px;
+  }
+
+.discription{
+  margin-left: 30px;
+}

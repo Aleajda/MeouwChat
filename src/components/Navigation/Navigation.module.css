@@ -1,0 +1,44 @@
+.item {
+    font-size: large;
+    margin: 0 auto;
+    font-size: 30px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.nav {
+
+}
+
+.navWithoutFriends{
+    height: 100vh;
+}
+
+.navWithoutFriends nav{
+    padding-top: 50px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.nav nav {
+    padding-top: 50px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.item a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.item a.activeLink {
+    color: greenyellow;
+}
+
+.item.dark a.activeLink {
+    color: rgb(47, 248, 255)
+}
+
+

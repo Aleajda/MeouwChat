@@ -1,0 +1,165 @@
+.inputQuery{
+    width: 250px;
+    margin-right: 5px;
+    color: black;
+    border: solid greenyellow 2px;
+    outline: none;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 15px;
+    padding: auto;
+    text-align: center;
+}
+
+.wrapper{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.audioWrapper{
+    padding: 10px 0;
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    position: relative;
+    height: 80px;
+    padding-top: 30px;
+}
+
+.audioWrapper audio{
+    width: 80%;
+    padding-left: 20px;
+    height: 50px;
+}
+
+.songTitle{
+    display: inline-block;
+    position: absolute;
+    z-index: 10;
+    padding-top: 5px;
+    color: black;
+    font-size: 12px;
+    max-width: 80%;
+    white-space: nowrap;
+}
+.songImg{
+    border-radius: 100%;
+    display: inline-block;
+    position: absolute;
+    left: 5px;
+    width: 50px;
+}
+
+.formWrapper{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.searchForm{
+    display: flex;
+    gap: 10px;
+}
+
+.queries{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.radioBtn{
+    display: flex;
+    gap: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* КНОПКА */
+.submitBtn {
+    width: 100px;
+    height: 25px;
+    color: black;
+    border-radius: 2px;
+    padding: 0px 0px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+     box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+     7px 7px 20px 0px rgba(0,0,0,.1),
+     4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+  }
+  .submitBtn {
+    background: greenyellow;
+    background: radial-gradient(circle, greenyellow 0%, white 100%);
+    padding: 0;
+    border: none;
+  }
+  .submitBtn:before,
+  .submitBtn:after {
+    position: absolute;
+    content: "";
+    height: 0%;
+    width: 1px;
+  }
+  .submitBtn:before {
+    right: 0;
+    top: 0;
+    transition: all 500ms ease;
+  }
+  .submitBtn:after {
+    left: 0;
+    bottom: 0;
+    transition: all 500ms ease;
+  }
+  .submitBtn:hover{
+    color: gray;
+    box-shadow: none;
+  }
+  .submitBtn:hover:before {
+    transition: all 500ms ease;
+    height: 100%;
+  }
+  .submitBtn:hover:after {
+    transition: all 500ms ease;
+    height: 100%;
+  }
+
+
+  @media only screen and (max-width: 1100px) and (min-width: 751px){
+    .audioWrapper{
+      width: 80%;
+    }
+    .wrapper{
+      justify-content: center;
+    }
+  }
+
+  @media only screen and (max-width: 751px) and (min-width: 0px){
+    .audioWrapper{
+      width: 90%;
+      padding-left: 20px;
+    }
+    .wrapper{
+      justify-content: center;
+    }
+  }
