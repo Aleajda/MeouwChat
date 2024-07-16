@@ -55,9 +55,9 @@ const Login = (props) => {
                     {errors?.captcha && <p style={{color: "red"}}>Поле обязательно к заполнению</p> }
                 </div> 
                 <div className={s.formDiv}>
-                    <input type="text" className={s.formInput}
+                    <input style={props.dark ? {color: 'white'} : null} type="text" className={s.formInput}
                     {...register("captcha", {required: true})}/>
-                    <label className={s.formLabel}>Captcha</label>
+                    <label style={props.dark ? {backgroundColor: '#191919'} : null} className={s.formLabel}>Captcha</label>
                 </div>
                 <div className={s.captchaImg}><img src={props.captcha}/></div> 
             </div>

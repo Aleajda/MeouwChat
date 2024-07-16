@@ -106,12 +106,12 @@ const Users = (props) => {
                             {u.followed 
                                 ? <button 
                                     style={props.dark
-                                    ? {background: 'rgb(47, 248, 255)', background: 'radial-gradient(circle, rgb(47, 248, 255) 0%, white 100%)', borderRadius: "13px", borderWidth: "1px", cursor: "pointer"}
-                                    : {background: 'greenyellow', background: 'radial-gradient(circle, greenyellow 0%, white 100%)', borderRadius: "13px", borderWidth: "1px", cursor: "pointer"}} disabled={props.isFollowing.some(id => id === u.id)} onClick={() => {props.unfollow(u.id);}}>Unfollow</button>
+                                    ? {background: 'rgb(47, 248, 255)', borderRadius: "13px", borderWidth: "1px", cursor: "pointer"}
+                                    : {background: 'greenyellow', borderRadius: "13px", borderWidth: "1px", cursor: "pointer"}} disabled={props.isFollowing.some(id => id === u.id)} onClick={() => {props.unfollow(u.id);}}>Отписаться</button>
                                 : <button 
                                     style={props.dark
-                                    ? {background: 'rgb(47, 248, 255)', background: 'radial-gradient(circle, rgb(47, 248, 255) 0%, white 100%)', borderRadius: "13px", borderWidth: "1px", cursor: "pointer"}
-                                    : {background: 'greenyellow', background: 'radial-gradient(circle, greenyellow 0%, white 100%)', borderRadius: "13px", borderWidth: "1px", cursor: "pointer"}}disabled={props.isFollowing.some(id => id === u.id)} onClick={() => {props.follow(u.id);}}>Follow</button>}
+                                    ? {background: 'rgb(47, 248, 255)', borderRadius: "13px", borderWidth: "1px", cursor: "pointer"}
+                                    : {background: 'greenyellow', borderRadius: "13px", borderWidth: "1px", cursor: "pointer"}}disabled={props.isFollowing.some(id => id === u.id)} onClick={() => {props.follow(u.id);}}>Подписаться</button>}
                         </div>
                     </div>)
                 }

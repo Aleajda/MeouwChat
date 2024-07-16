@@ -64,7 +64,7 @@ const ProfileInfo = (props) => {
                                 </div>
                             </div>
                             <div>
-                                <ProfileStatusWithHooks status = {props.status} updateStatus = {props.updateStatus} isOwner={props.isOwner}/>
+                                <ProfileStatusWithHooks dark={props.dark} status = {props.status} updateStatus = {props.updateStatus} isOwner={props.isOwner}/>
                             </div>
                             <div className={s.shortInfo}>
                                 Краткая информация: 

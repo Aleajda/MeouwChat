@@ -1,7 +1,7 @@
 {
   "name": "reactapp1",
   "version": "0.1.0",
-  "homepage": "https://aleajda.github.io/meouwChatDemo",
+  "homepage": "https://Aleajda.github.io/MeouwChat",
   "private": true,
   "dependencies": {
     "@ant-design/icons": "^5.3.7",

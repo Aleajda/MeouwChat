@@ -27,14 +27,14 @@ const Header = (props) => {
                 <button 
                     style={props.dark ? {background: 'rgb(47, 248, 255)', background: 'radial-gradient(circle, rgb(47, 248, 255) 0%, white 100%)'} : null} 
                     className={s.submitBtn} onClick={props.logoutUser}>
-                    <span>logout</span>
+                    <span>выйти</span>
                 </button>
             </div>
             <div style={{cursor: 'pointer'}} onClick={toggleNav} className={s.navImg}><MenuOutlined style={{fontSize: '30px', paddingTop: '5px'}}/></div>
             {showNav && <div className={s.fullScreenNav}><NavigationWithoutFriends toggleNav={toggleNav}/></div>}
         </div>
         :
-        <div className={s.loginLink}><NavLink to="/login">login</NavLink></div>}
+        <div className={s.loginLink}><NavLink to="/login">войти</NavLink></div>}
         </header> 
     );
 }
